@@ -1,0 +1,106 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+.layaout{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #f7f8fd;
+}
+
+.layaout__main{
+    width: 50rem;
+}
+
+.main__title{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main__form{
+    width: 100%;
+}
+
+.form__input{
+    width: 100%;
+    border: none;
+    background-color: #24273d;
+    padding: 1.5rem;
+    border-radius: 5px;
+    color: #bbb;
+    font-weight: 600;
+    outline: none;
+    margin-bottom: 4rem;
+}
+
+.form__input::placeholder{
+    color: #bbb;
+}
+
+.form__list{
+    list-style: none;
+    border-radius: 5px;
+}
+
+.list__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #363a59;
+    background-color: #24273d;
+    transition: all .3s ease;
+    color: white;
+}
+
+.list__task{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list__img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.list__img:hover{
+    transform: scale(1.25);
+}
+
+.task__check{
+    width: 2rem;
+    height: 2rem;
+    background-color: #9d9ea7;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.task__check:checked{
+    background-image: url(img/lista-de-verificacion.png);
+    background-size: contain;
+}
+
+.task__text{
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
